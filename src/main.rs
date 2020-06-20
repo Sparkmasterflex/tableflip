@@ -22,10 +22,16 @@ fn main() {
       "(╯°□°）╯︵ {flip}",
       flip = upside_down(&to_flip)
     );
-    let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
-    ctx.set_contents(flipped.to_owned()).unwrap();
-    println!("\"{}\" copied to clipboard!", &flipped);
+    to_the_pastebuffer(&flipped);
   } else {
-      println!("(╯°□°）╯︵ ┻━┻ I flip tables if you don't tell me otherwise");
+    let tf: String = "(╯°□°）╯︵ ┻━┻".to_string();
+    println!("{} I flip tables if you don't tell me otherwise", &tf);
+    to_the_pastebuffer(&tf);
   }
+}
+
+fn to_the_pastebuffer(flipped: &str) {
+  let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
+  ctx.set_contents(flipped.to_owned()).unwrap();
+  println!("\n\n\"{}\" copied to clipboard!", &flipped);
 }
