@@ -1,6 +1,8 @@
 # tableflip
 silly little script for table flipping someone's name
 
+<img width="332" alt="Screen Shot 2020-06-22 at 11 19 12 AM" src="https://user-images.githubusercontent.com/726129/85337059-78ddcb80-b47b-11ea-8950-eed101b7f041.png">
+
 ## Installation
 
 Must have [rustlang installed](https://www.rust-lang.org/tools/install)
@@ -14,5 +16,7 @@ or just download executable [here](https://github.com/Sparkmasterflex/tableflip/
 ## Usage
 
 `$ tableflip <string>` to tableflip some text
+
 or
+
 `$ tableflip` to just flip a table
